@@ -5,7 +5,7 @@
 
         public static void ExecutePrograms()
         {
-            var node = Node.CreateBinaryTree();
+            var node = CreateBinaryTree();
             Console.WriteLine($"\nInOrder Traversal");
             InOrderTraverse.Traverse(node);
 
@@ -30,6 +30,17 @@
 
             Console.WriteLine($"Max Value in Binary Tree - {HeightOfBinaryTree.Get(node)}");
         }
+
+        private static Node CreateBinaryTree()
+        {
+            Node root = new Node(10);
+            root.left = new Node(20);
+            root.right = new Node(30);
+            root.left.left = new Node(40);
+
+            return root;
+        }
+
 
     }
 }

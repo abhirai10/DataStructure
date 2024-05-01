@@ -1,6 +1,6 @@
 ﻿namespace DataStructure.Tree.BinaryTree
 {
-	public class IterativePreOrderSpaceOptimizedTraverse
+    public class IterativePreOrderSpaceOptimizedTraverse
 	{
 		public static void Traverse(Node root)
 		{
@@ -10,7 +10,7 @@
 			Node current = root;			
 			while (current != null || stack.Count > 0)
 			{
-				// Iterate over left child, prit it and push only right to stack if it exists
+				// Iterate over left child, print it and push only right to stack if it exists
 				while (current != null)
 				{
 					Console.Write($"{current.data} ");

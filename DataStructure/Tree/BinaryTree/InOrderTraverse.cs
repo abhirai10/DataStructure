@@ -1,6 +1,6 @@
 ﻿namespace DataStructure.Tree.BinaryTree
 {
-    
+
     internal class InOrderTraverse
     {        
         public static void Traverse(Node root)
