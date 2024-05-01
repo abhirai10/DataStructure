@@ -1,4 +1,6 @@
-﻿namespace DataStructure.Tree.BinarySearchTree
+﻿using DataStructure.Tree.BinaryTree;
+
+namespace DataStructure.Tree.BinarySearchTree
 {
     public class Helper
     {
@@ -10,8 +12,11 @@
 
             Console.WriteLine($"Binary search tree search Iterative No 50 found : {Search.IsPresentIterative(node, 50)}" );
 
+            Console.WriteLine($"Binary search tree Insert Data Recursive");
+            Insert.DataRecursive(node, 100);
 
-
+            Console.WriteLine($"Binary search tree Insert Data Iterative");
+            Insert.DataIterative(node, 200);
 
         }
 
