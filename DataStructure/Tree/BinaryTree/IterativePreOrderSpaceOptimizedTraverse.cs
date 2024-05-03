@@ -21,6 +21,7 @@
 					current = current.left;
 				}
 				
+				// Pop right node and follow the same cycle
 				if(stack.Count > 0)
 					current = stack.Pop();
 			}

@@ -1,6 +1,4 @@
-﻿using DataStructure.Tree.BinaryTree;
-
-namespace DataStructure.Tree.BinarySearchTree
+﻿namespace DataStructure.Tree.BinarySearchTree
 {
     public class Helper
     {

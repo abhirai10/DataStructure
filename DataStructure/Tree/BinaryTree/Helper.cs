@@ -1,4 +1,6 @@
-﻿namespace DataStructure.Tree.BinaryTree
+﻿using System.ComponentModel.Design.Serialization;
+
+namespace DataStructure.Tree.BinaryTree
 {
     public class Helper
     {
@@ -10,7 +12,7 @@
             InOrderTraverse.Traverse(node);
 
             Console.WriteLine("\nIterative InOrder Traversal");
-            IterativeInOrderTraverse.Traverse(node);
+            IterativeInOrderTraverse.Traverse(node);            
 
             Console.WriteLine("\nPreOrder Traversal");
             PreOrderTraverse.Traverse(node);
@@ -24,13 +26,15 @@
             Console.WriteLine("\nPostOrder Traversal");
             PostOrderTraverse.Traverse(node);
 
-            Console.WriteLine($"\nSizeOfBinaryTree - {SizeOfBinaryTree.Get(node)}");
+            Console.WriteLine($"\nSizeOfBinaryTree - {SizeOfBinaryTree.Get(node)}");         
 
             Console.WriteLine($"Max Value in Binary Tree - {MaxValueInBinaryTree.Get(node)}");
 
-            Console.WriteLine($"Max Value in Binary Tree - {HeightOfBinaryTree.Get(node)}");
-        }
+            Console.WriteLine($"Height of Binary Tree - {HeightOfBinaryTree.Get(node)}");
 
+            
+        }
+            
         private static Node CreateBinaryTree()
         {
             Node root = new Node(10);

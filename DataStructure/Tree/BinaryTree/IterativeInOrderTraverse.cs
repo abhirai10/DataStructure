@@ -10,6 +10,7 @@
             Node current = root;
             while(current != null || stack.Count > 0)
             {
+                // Keep adding left node to the stack untill no left node is found, Print it and the check for any right node and add to stack
                 while(current != null)
                 {
                     stack.Push(current);
